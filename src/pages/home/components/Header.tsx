@@ -19,7 +19,7 @@ export function Header() {
                     alt="ZZLogo Logo"
                     width={100}
                     height={24}
-                    className="mr-4"
+                    className="md:mr-4"
                     priority
                 />
                 <nav className="hidden md:flex space-x-4">
@@ -30,7 +30,7 @@ export function Header() {
                     ))}
                 </nav>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between space-x-4">
                     <EnableLocation/>
                     <FavoriteIcon/>
                     <UserIcon/>
