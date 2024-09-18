@@ -1,9 +1,10 @@
+import { Header } from "./home/components/Header"
 
 export default function Home() {
   return (
     <div>
       <main>
-        <header>header</header>
+        <Header/>
         <section>body</section>
       </main>
       <footer>
