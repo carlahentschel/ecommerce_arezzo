@@ -4,7 +4,7 @@ import { Commissioner } from "next/font/google";
 
 const comissioner = Commissioner({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export default function App({ Component, pageProps }: AppProps) {
