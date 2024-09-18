@@ -4,17 +4,8 @@ import { FavoriteIcon } from "./icons/FavoriteIcon";
 import { UserIcon } from "./icons/UserIcon";
 import { BagIcon } from "./icons/BagIcon";
 import { NavLink } from "./NavLink";
-
-const navLinks = [
-    { label: "novidades", href: "/novidades" },
-    { label: "sapatos", href: "/sapatos/sandalias" },
-    { label: "botas", href: "/botas" },
-    { label: "bolsas", href: "/bolsas" },
-    { label: "acessórios", href: "/acessorios" },
-    { label: "promoções", href: "/promocoes" },
-    { label: "|", href: "" },
-    { label: "brizza", href: "/brizza" }
-];
+import { EnableLocation } from "./EnableLocation";
+import { navLinks } from "../utils/nav-links";
 
 export function Header() {
     return (
@@ -22,31 +13,29 @@ export function Header() {
             <div className="md:hidden">
                 <NavigationMenuIcon/>
             </div>
-            
-            <Image
-                src="/assets/ZZLOGO.png"
-                alt="ZZLogo Logo"
-                width={100}
-                height={24}
-                priority
-            />
-            <div className="flex w-full justify-between items-center ml-4">
-                <nav className="hidden md:flex space-x-5">
+            <div className="flex items-center">
+                <Image
+                    src="/assets/ZZLOGO.png"
+                    alt="ZZLogo Logo"
+                    width={100}
+                    height={24}
+                    className="mr-4"
+                    priority
+                />
+                <nav className="hidden md:flex space-x-4">
                     {navLinks.map((link, index) => (
                         <NavLink key={index} href={link.href}>
                             {link.label}
                         </NavLink>
                     ))}
                 </nav>
-                <div className="flex space-x-5">
+                </div>
+                <div className="flex justify-between">
+                    <EnableLocation/>
                     <FavoriteIcon/>
                     <UserIcon/>
                     <BagIcon/>
                 </div>
-
-            </div>
-            
-            
         </header>
     )
 }

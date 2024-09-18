@@ -5,9 +5,9 @@ export default function Home() {
     <div>
       <main>
         <Header/>
-        <section>body</section>
+        <section className="w-full bg-slate-300">body</section>
       </main>
-      <footer>
+      <footer className="w-full bg-slate-400">
         <p>footer</p>
       </footer>
     </div>
