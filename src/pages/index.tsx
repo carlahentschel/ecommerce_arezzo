@@ -7,10 +7,10 @@ export default function Home() {
       <main>
         <Header/>
         <Banner/>
-        <section className="w-full bg-slate-300">body</section>
+        
       </main>
       <footer className="w-full bg-slate-400">
-        <p>footer</p>
+        
       </footer>
     </div>
   );

@@ -1,20 +1,27 @@
 import Image from "next/image";
+import BolsaMarrom from "../../../../public/assets/BolsaMarrom.png";
+import SandaliaMobile from "../../../../public/assets/SandaliaMobile.webp";
 
 export function Banner() {
     return (
-        <section className="relative flex flex-col justi">
+        <section className="w-full relative">
             <Image
-                src="/assets/BolsaMarrom.png" 
-                alt="Banner"
-                width={1440}
-                height={720}
-                
+                src={BolsaMarrom}
+                alt="Banner bolsa marrom"
+                className="hidden lg:block object-cover w-full"
             />
-            <button 
-                className="absolute bg-transparent hover:bg-opacity-20 text-black py-3 px-5 rounded-[32px] border border-black"
-            >
-                Confira
-            </button>
+            <Image
+                src={SandaliaMobile}
+                alt="Banner sandalia"
+                className="block lg:hidden object-cover w-full" 
+            />
+            <div className="absolute bottom-10 left-1/2">
+                <button 
+                    className="bg-transparent hover:bg-black hover:border-none text-white py-3 px-5 rounded-full w-32 h-14 border border-white uppercase"
+                >
+                    Confira
+                </button>
+            </div>
         </section>
     )
 }
