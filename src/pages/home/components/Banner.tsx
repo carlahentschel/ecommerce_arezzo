@@ -1,6 +1,6 @@
 import Image from "next/image";
-import BolsaMarrom from "../../../../public/assets/BolsaMarrom.png";
-import SandaliaMobile from "../../../../public/assets/SandaliaMobile.webp";
+import BolsaMarrom from "/public/assets/BolsaMarrom.png";
+import SandaliaMobile from "/public/assets/SandaliaMobile.webp";
 
 export function Banner() {
     return (
