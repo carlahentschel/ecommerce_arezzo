@@ -15,9 +15,9 @@ export function Banner() {
                 alt="Banner sandalia"
                 className="block lg:hidden object-cover w-full" 
             />
-            <div className="absolute bottom-10 left-1/2">
-                <button 
-                    className="bg-transparent hover:bg-black hover:border-none text-white py-3 px-5 rounded-full w-32 h-14 border border-white uppercase"
+            <div className="absolute bottom-8 right-1/2 translate-x-1/2">
+                <button
+                    className="bg-transparent hover:bg-black hover:border-none text-white text-base py-3 px-5 rounded-full min-w-32 h-14 border border-white uppercase"
                 >
                     Confira
                 </button>
