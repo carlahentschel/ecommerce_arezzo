@@ -37,7 +37,7 @@ export function NewCollection() {
         </div>
 
         <div className="flex flex-col md:w-1/5 md:ml-3">
-          <h3 className="text-base font-normal leading-5 mt-2 mb-3">
+          <h3 className="text-base font-normal leading-5 mt-3 mb-3">
             <span className="block">Conheça o novo coturno</span>
             <span>Livia Arezzo</span>
           </h3>
