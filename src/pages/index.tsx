@@ -1,5 +1,6 @@
 import { Banner } from "./home/components/Banner";
 import { Header } from "./home/components/Header"
+import { PromotionalBanner } from "./home/components/PromotionalBanner";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <main>
         <Header/>
         <Banner/>
+        <PromotionalBanner/>
         
       </main>
       <footer className="w-full bg-slate-400">
