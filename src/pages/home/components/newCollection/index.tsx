@@ -15,22 +15,22 @@ export function NewCollection() {
           </div>
 
           <div className="flex items-end md:-mt-10">
-            <div>
+            <div className='flex-1'>
               <Image
                 src={Livia1}
                 alt="Modelo deitada usando coturno Livia preto com sola rosa"
                 width={400}
                 height={400}
-                className="object-cover"
+                className="w-full object-cover"
               />
             </div>
-            <div>
+            <div className='flex-1'>
               <Image
                 src={Livia2}
                 alt="Modelo sentada usando coturno Livia preto com sola rosa"
                 width={437}
                 height={592}
-                className="object-cover"
+                className="w-full object-cover"
               />
             </div>
           </div>
