@@ -1,7 +1,9 @@
 import { Banner } from './home/components/Banner';
 import { Header } from './home/components/Header';
-import { NewCollection } from './home/components/newCollection';
 import { PromotionalBanner } from './home/components/PromotionalBanner';
+import { NewCollection } from './home/components/newCollection';
+
+
 
 export default function Home() {
   return (
@@ -9,8 +11,10 @@ export default function Home() {
       <main>
         <Header />
         <Banner />
+<PromotionalBanner />
         <NewCollection />
-        <PromotionalBanner />
+
+  
       </main>
       <footer className="w-full bg-slate-400"></footer>
     </div>
