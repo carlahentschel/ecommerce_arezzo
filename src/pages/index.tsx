@@ -18,13 +18,9 @@ export default function Home({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
-      <main>
-        <Header />
-        <Banner />
-        <PromotionalBanner />
-        <Carousel products={products} />
-      </main>
-      <footer className="w-full bg-slate-400"></footer>
+      <Banner />
+      <PromotionalBanner />
+      <Carousel products={products} />
     </div>
   );
 }
