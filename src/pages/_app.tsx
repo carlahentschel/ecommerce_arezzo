@@ -4,6 +4,7 @@ import { Commissioner } from 'next/font/google';
 import { Header } from './home/components/Header';
 import { Footer } from './home/components/footer';
 
+
 const comissioner = Commissioner({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],

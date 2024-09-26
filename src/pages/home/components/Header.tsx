@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ZZLOGO from '../../../../public/assets/ZZLOGO.svg';
+import ZZLOGO from '/public/assets/ZZLOGO.svg';
 import { NavigationMenuIcon } from './icons/NavigationMenuIcon';
 import { FavoriteIcon } from './icons/FavoriteIcon';
 import { UserIcon } from './icons/UserIcon';
@@ -10,7 +10,7 @@ import { navLinks } from '../utils/nav-links';
 
 export function Header() {
   return (
-    <header className="flex justify-between items-center w-full h-24 px-4 bg-white">
+    <header className="fixed flex justify-between items-center w-full h-24 px-4 bg-white z-10">
       <div className="lg:hidden w-1/3 lg:w-auto">
         <NavigationMenuIcon />
       </div>
