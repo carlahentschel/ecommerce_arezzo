@@ -6,9 +6,10 @@ interface IProductCardProps {
 }
 
 export function ProductCard({ products }: IProductCardProps) {
+  const PRODUCT_ITEMS_LIMIT = 5;
   return (
     <div className="flex justify-between w-full overflow-x-auto gap-1">
-      {products.slice(0, 5).map((product, index) => (
+      {products.slice(0, PRODUCT_ITEMS_LIMIT).map((product, index) => (
         <div key={index} className="flex flex-col min-w-72 w-full">
           <div className="relative w-full mb-2 h-96">
             <Image
