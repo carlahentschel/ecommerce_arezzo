@@ -10,7 +10,8 @@ import { navLinks } from '../utils/nav-links';
 
 export function Header() {
   return (
-    <header className="fixed flex justify-between items-center w-full h-24 px-4 bg-white z-10">
+    <header className="flex justify-between items-center w-full h-24 px-4 bg-white">
+      {/* fixed z-10 -> tive que tirar essas props pro componente BreadCrumb não sumir */}
       <div className="lg:hidden w-1/3 lg:w-auto">
         <NavigationMenuIcon />
       </div>
