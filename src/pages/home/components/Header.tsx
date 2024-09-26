@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import ZZLOGO from '../../../../public/assets/ZZLOGO.svg';
+import ZZLOGO from '/public/assets/ZZLOGO.svg';
 import { NavigationMenuIcon } from './icons/NavigationMenuIcon';
 import { FavoriteIcon } from './icons/FavoriteIcon';
 import { UserIcon } from './icons/UserIcon';
