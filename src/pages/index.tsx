@@ -1,7 +1,6 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
 import { Banner } from './home/components/Banner';
 import { Carousel } from './home/components/carousel';
-import { Header } from './home/components/Header';
 import { PromotionalBanner } from './home/components/PromotionalBanner';
 import { IProduct } from './types/product';
 
