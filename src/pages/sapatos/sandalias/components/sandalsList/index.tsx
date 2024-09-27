@@ -1,6 +1,11 @@
+import { InferGetStaticPropsType } from 'next';
 import { FilterIcon } from '../icons/FilterIcon';
+import { getStaticProps } from '../..';
+import { SandalCard } from '../SandalCard';
 
-export function SandalsList() {
+export function SandalsList({
+  products,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <section className="w-full py-5">
       <div className="flex flex-col-reverse items-start lg:flex-row lg:items-center px-6 w-full">
@@ -16,6 +21,7 @@ export function SandalsList() {
           </h2>
         </div>
       </div>
+      <SandalCard products={products} />
     </section>
   );
 }
