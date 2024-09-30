@@ -1,8 +1,8 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { BreadCrumb } from './components/breadCrumb';
 import { SandalsList } from './components/sandalsList';
-import { TypesSandalsCards } from './components/typesSandalsCards';
-import { IProduct } from '@/pages/types/product';
+import { IProduct } from '@/types/product';
+import { BreadCrumb } from '@/components/breadCrumb';
+import { CategoriesCard } from '@/components/categoriesCard';
 
 export const getStaticProps = (async () => {
   const res = await fetch('http://localhost:3001/products');
@@ -18,7 +18,7 @@ export default function SandalsPDC({
   return (
     <div>
       <BreadCrumb />
-      <TypesSandalsCards />
+      <CategoriesCard />
       <SandalsList products={products} />
     </div>
   );

@@ -1,10 +1,9 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { Banner } from './home/components/Banner';
-import { Carousel } from './home/components/carousel';
-import { PromotionalBanner } from './home/components/PromotionalBanner';
-import { IProduct } from './types/product';
-import { NewCollection } from './home/components/newCollection';
-
+import { Banner } from '../components/banner';
+import { Carousel } from '../components/carousel';
+import { PromotionalBanner } from '../components/promotionalBanner';
+import { IProduct } from '../types/product';
+import { NewCollection } from '../components/newCollection';
 
 export const getStaticProps = (async () => {
   const res = await fetch('http://localhost:3001/products');

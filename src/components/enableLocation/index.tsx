@@ -1,4 +1,4 @@
-import { LocationIcon } from './icons/LocationIcon';
+import { LocationIcon } from '../icons/LocationIcon';
 
 export function EnableLocation() {
   return (
