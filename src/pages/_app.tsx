@@ -12,8 +12,8 @@ const comissioner = Commissioner({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={comissioner.className}>
-      <main>
-        <Header />
+      <Header />
+      <main className="pt-6">
         <Component {...pageProps} />
         <Footer />
       </main>
