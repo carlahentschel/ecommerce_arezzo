@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={comissioner.className}>
       <Header />
-      <main className="pt-6">
+      <main>
         <Component {...pageProps} />
         <Footer />
       </main>
