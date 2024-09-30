@@ -1,9 +1,9 @@
 import { InferGetStaticPropsType } from 'next';
 import { FilterIcon } from '../icons/FilterIcon';
-import { getStaticProps } from '../..';
-import { SandalCard } from '../SandalCard';
+import { getStaticProps } from '@/pages/sapatos/sandalias';
+import { ProductCard } from '../productCard';
 
-export function SandalsList({
+export function ProductsList({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
@@ -21,7 +21,7 @@ export function SandalsList({
           </h2>
         </div>
       </div>
-      <SandalCard products={products} />
+      <ProductCard products={products} />
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import { GetStaticProps, InferGetStaticPropsType } from 'next';
-import { SandalsList } from './components/sandalsList';
+import { ProductsList } from '@/components/productsList';
 import { IProduct } from '@/types/product';
 import { BreadCrumb } from '@/components/breadCrumb';
 import { CategoriesCard } from '@/components/categoriesCard';
@@ -19,7 +19,7 @@ export default function SandalsPDC({
     <div>
       <BreadCrumb />
       <CategoriesCard />
-      <SandalsList products={products} />
+      <ProductsList products={products} />
     </div>
   );
 }
