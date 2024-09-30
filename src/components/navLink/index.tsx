@@ -6,7 +6,9 @@ interface INavLinkProps {
 }
 
 export function NavLink({ href, children }: INavLinkProps) {
-  const content = <h3 className="text-xs uppercase">{children}</h3>;
+  const content = (
+    <h3 className="text-xs font-normal uppercase cursor-pointer">{children}</h3>
+  );
 
   if (!href) {
     return <>{content}</>;

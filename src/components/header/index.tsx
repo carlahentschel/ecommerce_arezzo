@@ -1,16 +1,16 @@
 import Image from 'next/image';
 import ZZLOGO from '/public/assets/ZZLOGO.svg';
-import { NavigationMenuIcon } from './icons/NavigationMenuIcon';
-import { FavoriteIcon } from './icons/FavoriteIcon';
-import { UserIcon } from './icons/UserIcon';
-import { BagIcon } from './icons/BagIcon';
-import { NavLink } from './NavLink';
-import { EnableLocation } from './EnableLocation';
-import { navLinks } from '../utils/nav-links';
+import { NavigationMenuIcon } from '../icons/NavigationMenuIcon';
+import { FavoriteIcon } from '../icons/FavoriteIcon';
+import { UserIcon } from '../icons/UserIcon';
+import { BagIcon } from '../icons/BagIcon';
+import { NavLink } from '../navLink';
+import { EnableLocation } from '../enableLocation';
+import { navLinks } from '../../utils/nav-links';
 
 export function Header() {
   return (
-    <header className="fixed flex justify-between items-center w-full h-24 px-4 bg-white z-10">
+    <header className="fixed z-10 top-0 flex justify-between items-center w-full h-24 px-4 bg-white">
       <div className="lg:hidden w-1/3 lg:w-auto">
         <NavigationMenuIcon />
       </div>
