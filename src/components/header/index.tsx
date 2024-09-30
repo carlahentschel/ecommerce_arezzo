@@ -1,12 +1,12 @@
 import Image from 'next/image';
 import ZZLOGO from '/public/assets/ZZLOGO.svg';
-import { NavigationMenuIcon } from './icons/NavigationMenuIcon';
-import { FavoriteIcon } from './icons/FavoriteIcon';
-import { UserIcon } from './icons/UserIcon';
-import { BagIcon } from './icons/BagIcon';
-import { NavLink } from './NavLink';
-import { EnableLocation } from './EnableLocation';
-import { navLinks } from '../utils/nav-links';
+import { NavigationMenuIcon } from '../icons/NavigationMenuIcon';
+import { FavoriteIcon } from '../icons/FavoriteIcon';
+import { UserIcon } from '../icons/UserIcon';
+import { BagIcon } from '../icons/BagIcon';
+import { NavLink } from '../navLink';
+import { EnableLocation } from '../enableLocation';
+import { navLinks } from '../../utils/nav-links';
 
 export function Header() {
   return (

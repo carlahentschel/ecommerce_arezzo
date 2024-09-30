@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next';
-import { ProductCard } from '../ProductCard';
+import { ProductCard } from '../productCard';
 import { getStaticProps } from '@/pages';
 
 export function Carousel({
