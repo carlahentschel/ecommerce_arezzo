@@ -2,15 +2,26 @@ import { InferGetStaticPropsType } from 'next';
 import { FilterIcon } from '../icons/FilterIcon';
 import { getStaticProps } from '@/pages/sapatos/sandalias';
 import { ProductCard } from '../productCard';
+import { useState } from 'react';
+import { Filter } from '../filter';
 
 export function ProductsList({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
+  const [open, setOpen] = useState(false);
+
+  const handleOpen = () => {
+    setOpen(!open);
+  };
+
   return (
-    <section className="w-full">
+    <section className="w-full ">
       <hr />
       <div className="flex flex-col-reverse items-start lg:flex-row lg:items-center px-6 py-3 lg:py-5 w-full">
-        <button className="flex justify-center items-center gap-3 text-sm border rounded-full min-w-28 h-10 mr-9">
+        <button
+          className="flex justify-center items-center gap-3 text-sm border rounded-full min-w-28 h-10 mr-9"
+          onClick={handleOpen}
+        >
           <FilterIcon />
           Filtrar
         </button>
@@ -22,7 +33,15 @@ export function ProductsList({
           </h2>
         </div>
       </div>
-      <ProductCard products={products} />
+      <div className="relative">
+        <ProductCard products={products} />
+
+        {open && (
+          <div className="fixed flex w-full h-full lg:w-1/4 top-24 bg-white z-10">
+            <Filter handleClose={handleOpen} />
+          </div>
+        )}
+      </div>
     </section>
   );
 }
