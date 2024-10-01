@@ -9,7 +9,7 @@ interface IFilterProps {
 
 export function Filter({ handleClose }: IFilterProps) {
   return (
-    <div className="flex flex-col w-full lg:w-1/4 px-4 py-4 ">
+    <div className="relative flex flex-col p-8">
       <div className="w-full flex justify-between mb-3">
         <span className="text-base">Filtrar por</span>
         <button onClick={handleClose}>
