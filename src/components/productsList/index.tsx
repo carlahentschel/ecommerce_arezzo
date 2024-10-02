@@ -1,11 +1,12 @@
-import { InferGetStaticPropsType } from 'next';
 import { FilterIcon } from '../icons/FilterIcon';
-import { getStaticProps } from '@/pages/sapatos/sandalias';
 import { ProductCard } from '../productCard';
+import { IProduct } from '@/types/product';
 
-export function ProductsList({
-  products,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+interface IProductListProps {
+  products: IProduct[];
+}
+
+export function ProductsList({ products }: IProductListProps) {
   return (
     <section className="w-full">
       <hr />

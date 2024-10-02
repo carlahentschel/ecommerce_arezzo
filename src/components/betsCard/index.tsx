@@ -5,8 +5,9 @@ interface IBetsCardProps {
   products: IProduct[];
 }
 
+const PRODUCT_ITEMS_LIMIT = 5;
+
 export function BetsCard({ products }: IBetsCardProps) {
-  const PRODUCT_ITEMS_LIMIT = 5;
   return (
     <div className="flex justify-between w-full overflow-x-auto gap-1">
       {products.slice(0, PRODUCT_ITEMS_LIMIT).map((product, index) => (
