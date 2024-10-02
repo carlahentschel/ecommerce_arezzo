@@ -1,5 +1,5 @@
 import { InferGetStaticPropsType } from 'next';
-import { ProductCard } from '../productCard';
+import { BetsCard } from '@/components/betsCard';
 import { getStaticProps } from '@/pages';
 
 export function Carousel({
@@ -16,7 +16,7 @@ export function Carousel({
         </a>
       </div>
       <div>
-        <ProductCard products={products} />
+        <BetsCard products={products} />
       </div>
     </section>
   );
