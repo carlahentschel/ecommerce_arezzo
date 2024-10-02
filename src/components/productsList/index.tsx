@@ -1,19 +1,19 @@
-import { InferGetStaticPropsType } from 'next';
 import { FilterIcon } from '../icons/FilterIcon';
-import { getStaticProps } from '@/pages/sapatos/sandalias';
 import { ProductCard } from '../productCard';
 import { useState } from 'react';
 import { Filter } from '../filter';
+import { IProduct } from '@/types/product';
 
-export function ProductsList({
-  products,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+interface IProductListProps {
+  products: IProduct[];
+}
+
+export function ProductsList({ products }: IProductListProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <section className="w-full">
       <hr />
