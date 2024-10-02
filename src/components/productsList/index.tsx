@@ -8,14 +8,14 @@ import { Filter } from '../filter';
 export function ProductsList({
   products,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const [open, setOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
-    setOpen(!open);
+    setIsOpen(!isOpen);
   };
 
   return (
-    <section className="w-full ">
+    <section className="w-full">
       <hr />
       <div className="flex flex-col-reverse items-start lg:flex-row lg:items-center px-6 py-3 lg:py-5 w-full">
         <button
@@ -36,7 +36,7 @@ export function ProductsList({
       <div className="relative">
         <ProductCard products={products} />
 
-        {open && (
+        {isOpen && (
           <div className="fixed flex w-full h-full lg:w-1/4 top-24 bg-white z-10">
             <Filter handleClose={handleOpen} />
           </div>
