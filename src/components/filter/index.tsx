@@ -16,7 +16,7 @@ export function Filter({ handleClose }: IFilterProps) {
   const toggleSize = () => setIsSizeOpen(!isSizeOpen);
 
   return (
-    <div className="relative flex flex-col p-8">
+    <div className="relative flex flex-col p-8 w-full">
       <div className="w-full flex justify-between mb-3 ">
         <span className="text-base">Filtrar por</span>
         <button onClick={handleClose}>
