@@ -10,7 +10,7 @@ interface IProductCardProps {
 export function ProductCard({ products }: IProductCardProps) {
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 w-full gap-1">
-      {products.map((product, index) => (
+      {products?.map((product, index) => (
         <div key={index} className="flex flex-col w-full">
           <div className="relative w-full flex flex-col items-end py-4 px-4 aspect-square">
             <Image
