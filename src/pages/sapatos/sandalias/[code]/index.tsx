@@ -83,14 +83,14 @@ export default function SandalPdp({ product }: IPdpProps) {
               <h2 className="">Tamanhos</h2>
               <div className="flex">
                 {sizesList.map((size, index) => (
-                  <button key={index} className="p-3">
+                  <button key={index} className="p-1 lg:p-2">
                     {size}
                   </button>
                 ))}
               </div>
             </div>
             <hr className="pb-6" />
-            <button className="uppercase border rounded-full text-sm py-3 mb-6">
+            <button className="w-full uppercase border rounded-full text-sm py-3 mb-6">
               Adicionar à sacola
             </button>
             <button className="uppercase rounded-full text-sm py-3 mb-6 bg-[#4F9071] text-white">
