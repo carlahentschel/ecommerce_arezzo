@@ -2,6 +2,7 @@ import { IProduct } from '@/types/product';
 import Image from 'next/image';
 import { FavoriteIcon } from '../icons/FavoriteIcon';
 import { BagIcon } from '../icons/BagIcon';
+import Link from 'next/link';
 
 interface IProductCardProps {
   products: IProduct[];
@@ -13,12 +14,14 @@ export function ProductCard({ products }: IProductCardProps) {
       {products?.map((product, index) => (
         <div key={index} className="flex flex-col w-full">
           <div className="relative w-full flex flex-col items-end py-4 px-4 aspect-square">
-            <Image
-              src={product.images[0].url}
-              alt={product.name}
-              layout="fill"
-              className="object-cover"
-            />
+            <Link href={`/sapatos/sandalias/${product.code}`}>
+              <Image
+                src={product.images[0].url}
+                alt={product.name}
+                layout="fill"
+                className="object-cover"
+              />
+            </Link>
             <div className="absolute flex gap-4">
               <button>
                 <BagIcon />
